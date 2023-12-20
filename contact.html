@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact us</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- logo goes here -->
+      <a href="index.html" class="logo">
+        <img
+          src="img\logoComplete.png"
+          alt="Game Day Grill Logo"
+          class="logoPic"
+      /></a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Reserve</a>
+        <a href="cart.html"
+          ><i class="fas fa-shopping-cart" id="fCart"></i><span></span
+        ></a>
+      </nav>
+
+      <div id="tinyDisplay">
+        <a href="cart.html"
+          ><i class="fas fa-shopping-cart fa-2x" id="burgerCart"></i
+          ><span></span
+        ></a>
+        <div id="hamburger" class="fas fa-bars"></div>
+      </div>
+    </header>
+
+    <div class="heading">
+      <h3>Make a Reservation</h3>
+      <p><a href="index.html">Home </a> <span> / Reservation</span></p>
+    </div>
+
+    <section class="contact">
+      <div class="row">
+        <form action="" method="post">
+          <h3>tell us something!</h3>
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="enter your name"
+            maxlength="50"
+            class="box"
+          />
+          <input
+            type="number"
+            name="number"
+            required
+            placeholder="enter your number"
+            max="9999999999"
+            min="0"
+            class="box"
+            onkeypress="if(this.value.length == 10) return false;"
+          />
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="enter your email"
+            maxlength="50"
+            class="box"
+          />
+          <input id="dateInput" type="date" class="inputBox box" name="date" />
+          <select name="time" id="selecttime" class="inputBox box">
+            <option value="9:30 AM" selected>9:30 AM</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="10:30 AM">10:30 AM</option>
+            <option value="11:00 AM">11:00 AM</option>
+            <option value="11:30 AM">11:30 AM</option>
+            <option value="12:00 AM">12:00 AM</option>
+            <option value="12:30 AM">12:30 AM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="1:30 PM">1:30 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="2:30 PM">2:30 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="3:30 PM">3:30 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
+            <option value="4:30 PM">4:30 PM</option>
+            <option value="5:00 PM">5:00 PM</option>
+            <option value="6:30 PM">6:30 PM</option>
+            <option value="5:30 PM">5:30 PM</option>
+            <option value="6:00 PM">6:00 PM</option>
+          </select>
+          <input type="submit" value="send message" class="btn" name="send" />
+        </form>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <div class="container">
+        <div class="footersection">
+          <h3>Links</h3>
+          <!-- add links here -->
+          <a href="#loan" id="loanLink"
+            ><i class="fas fa-angle-double-right"></i>Home</a
+          >
+          <a href="#search" id="searchLink"
+            ><i class="fas fa-angle-double-right"></i>Events</a
+          >
+          <a href="#appointment" id="appointmentLink"
+            ><i class="fas fa-angle-double-right"></i>Contact</a
+          >
+        </div>
+        <div class="footersection">
+          <h3>Contact Us</h3>
+          <a href="#"><i class="fas fa-phone"></i>+1 123-456-7890</a>
+          <a href="#"><i class="fas fa-globe"></i>Hollywood, FL</a>
+          <a href="#"
+            ><i class="fas fa-clock-four"></i>9am-7pm, Mon-Fri (closed on
+            holidays)
+          </a>
+        </div>
+      </div>
+      <div class="socialMediaWrapper">
+        <div class="socialMedia">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="loader">
+      <img src="images/loader.gif" alt="" />
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

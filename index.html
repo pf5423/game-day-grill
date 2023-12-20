@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- logo goes here -->
+      <a href="index.html" class="logo">
+        <img
+          src="img\logoComplete.png"
+          alt="Game Day Grill Logo"
+          class="logoPic"
+      /></a>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Reserve</a>
+        <a href="cart.html"
+          ><i class="fas fa-shopping-cart" id="fCart"></i><span></span
+        ></a>
+      </nav>
+
+      <div id="tinyDisplay">
+        <a href="cart.html"
+          ><i class="fas fa-shopping-cart fa-2x" id="burgerCart"></i
+          ><span></span
+        ></a>
+        <div id="hamburger" class="fas fa-bars"></div>
+      </div>
+    </header>
+
+    <section class="home">
+      <div class="slide">
+        <div class="content">
+          <h3>GAME DAY GRILL</h3>
+          <h3>BBQ</h3>
+          <span
+            >The go-to spot for delicious barbecue and hearty comfort food
+            enjoyed in a fun, friendly atmosphere. Our juicy brisket melts in
+            your mouth, the ribs fall right off the bone, and every homemade
+            side goes down real nice with 'em. You'll feel right at home with
+            our Southern hospitality and sweet tea smiles!</span
+          >
+
+          <a href="menu.html" class="btn">see menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h1 class="title">MENU</h1>
+
+      <div class="box-container">
+        <a href="category.html" class="box">
+          <i class="fa fa-cutlery fa-2x fIcon" aria-hidden="true"></i>
+          <h3>Appetizers</h3>
+        </a>
+
+        <a href="category.html" class="box">
+          <i class="fa fa-fire fa-2x fIcon" aria-hidden="true"></i>
+          <h3>Entrees</h3>
+        </a>
+
+        <a href="category.html" class="box">
+          <i class="fa fa-bowl-food fa-2x fIcon"></i>
+          <h3>Sides</h3>
+        </a>
+
+        <a href="category.html" class="box">
+          <i class="fa fa-birthday-cake fa-2x fIcon" aria-hidden="true"></i>
+          <h3>Desert</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="products">
+      <h1 class="title">APPETIZERS</h1>
+
+      <div class="box-container">
+        <form accept="" method="post" class="box">
+          <img src="img\appetizers\BurntEnds.jpg" alt="" />
+          <a href="category.html" class="cat">ITEM NAME</a>
+          <div class="name">ITEM DESCRIPTION</div>
+
+          <div class="flex">
+            <div class="price"><span>$</span>PRICE</div>
+
+            <div class="plus-minus">
+              <a href=""><i class="fa-solid fa-plus fa-3x fIcon"></i></a>
+              <div class="itemNumber">0</div>
+              <a href=""><i class="fa-solid fa-minus fa-3x fIcon"></i></a>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="more-btn">
+        <a href="menu.html" class="btn">Full Menu</a>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <div class="container">
+        <div class="footersection">
+          <h3>Links</h3>
+          <!-- add links here -->
+          <a href="#loan" id="loanLink"
+            ><i class="fas fa-angle-double-right"></i>Home</a
+          >
+          <a href="#search" id="searchLink"
+            ><i class="fas fa-angle-double-right"></i>Events</a
+          >
+          <a href="#appointment" id="appointmentLink"
+            ><i class="fas fa-angle-double-right"></i>Contact</a
+          >
+        </div>
+        <div class="footersection">
+          <h3>Contact Us</h3>
+          <a href="#"><i class="fas fa-phone"></i>+1 123-456-7890</a>
+          <a href="#"><i class="fas fa-globe"></i>Hollywood, FL</a>
+          <a href="#"
+            ><i class="fas fa-clock-four"></i>9am-7pm, Mon-Fri (closed on
+            holidays)
+          </a>
+        </div>
+      </div>
+      <div class="socialMediaWrapper">
+        <div class="socialMedia">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script>
+      var swiper = new Swiper(".home-slider", {
+        loop: true,
+        grabCursor: true,
+        effect: "flip",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
